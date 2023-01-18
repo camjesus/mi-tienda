@@ -1,6 +1,7 @@
+import './CartItem.css'
 <link href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet'/>
 
-const Cart = ({total}) => {
+const CartItem = ({total}) => {
     return (
         <div>
         <div className="cart-container">
@@ -12,4 +13,4 @@ const Cart = ({total}) => {
         </div>
     )
 }
-export default Cart;
+export default CartItem;

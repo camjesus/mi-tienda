@@ -1,0 +1,37 @@
+/* ITEM */ 
+.card {
+    background-color: white;
+    margin-inline: 30px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: blueviolet;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(76, 76, 76);
+  }
+  
+  .img-item {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+
+  .item-price {
+    text-align: right;
+    margin-right: 10px;
+    padding: 2px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .item-title {
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }

@@ -1,0 +1,60 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Remera Only Weed",
+            "category": "tshirt",
+            "image": "",
+            "price": 1000,
+            "size": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": "Remera de algodon bla bla bla",
+            "stock": 100
+        },
+        {
+            "id": 2,
+            "title": "Remera Take yours MEDS",
+            "category": "tshirt",
+            "image": "",
+            "price": 1000,
+            "size": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": "Remera de algodon bla bla bla",
+            "stock": 100
+        },
+        {
+            "id": 3,
+            "title": "Buzo Only Weed",
+            "category": "hoodie",
+            "image": "",
+            "price": 2800,
+            "size": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": "Remera de algodon bla bla bla",
+            "stock": 100
+        },
+        {
+            "id": 4,
+            "title": "Buzo Take yours MEDS",
+            "category": "hoodie",
+            "image": "",
+            "price": 2800,
+            "size": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": "Remera de algodon bla bla bla",
+            "stock": 100
+        }
+    ]
+}

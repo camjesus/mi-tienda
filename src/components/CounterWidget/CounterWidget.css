@@ -1,0 +1,20 @@
+.div-count{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    width: 150px;
+}
+
+.controllers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item {
+    margin: 15px;
+}
+
+.add-button {
+    margin-left: 80px;
+}

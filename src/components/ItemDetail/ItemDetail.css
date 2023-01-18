@@ -1,0 +1,19 @@
+.img-detail {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: blueviolet;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(76, 76, 76);
+    margin-right: 30px;
+}
+
+.detail-item {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.detail-text {
+    margin-top: auto;
+}

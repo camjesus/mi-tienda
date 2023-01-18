@@ -1,24 +1,21 @@
 import './App.css';
-import NavBar  from './components/NavBar';
-import Cart from './components/Cart'; 
-import Item from './components/Item';
+import {Route, BrowserRouter, Routes} from 'react-router-dom'
+import Home from './pages/Home/Home'
+import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer'
+import NavBar  from './components/NavBar/NavBar';
+import Error from './pages/Error/Error'
 
 function App() {
-  const item = {
-    name: "Remera prueba",
-    price: 2000
-  }
-  let number = 0;
   return (
-    <body>
-      <div className="App">
-      <NavBar/>
+    <div>
+      <NavBar />
+        <Routes>
+          <Route  path='*' element={<Error />}/>
+          <Route  path='/' element={<Home />}/>
+          <Route  path='/category/:type' element={<Home />}/>
+          <Route  path='/product/:id' element={<ItemDetailContainer />}/>
+        </Routes>
     </div>
-    <div className='item-list'>
-    <Item item={item} />
-    </div>
-    <Cart total={number}/>
-    </body>
   );
 }
 
