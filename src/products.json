@@ -11,12 +11,12 @@
                 "M",
                 "L"
             ],
-            "description": "Remera de algodon bla bla bla",
+            "description": "Remera de algodón con estampa en la espalda y logo de Calyx en el pecho",
             "stock": 100
         },
         {
             "id": 2,
-            "title": "Remera Take yours MEDS",
+            "title": "Ribbon",
             "category": "tshirt",
             "image": "",
             "price": 1000,
@@ -25,7 +25,7 @@
                 "M",
                 "L"
             ],
-            "description": "Remera de algodon bla bla bla",
+            "description": "Remera de algodón con estampa en la pecho y logo de Calyx en la espalda",
             "stock": 100
         },
         {
@@ -39,7 +39,7 @@
                 "M",
                 "L"
             ],
-            "description": "Remera de algodon bla bla bla",
+            "description": "Buzo de algodón con estampa en la espalda y logo de Calyx en centro del pecho",
             "stock": 100
         },
         {
@@ -53,7 +53,7 @@
                 "M",
                 "L"
             ],
-            "description": "Remera de algodon bla bla bla",
+            "description": "Buzo de algodón con estampa en la espalda y logo de Calyx en centro del pecho",
             "stock": 100
         }
     ]

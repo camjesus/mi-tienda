@@ -1,26 +1,30 @@
 import { useParams } from "react-router-dom"
 import  ItemDetail  from '../../components/ItemDetail/ItemDetail'
 import data from '../../products.json'
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import { useEffect, useState } from "react"
 
 const ItemDetailContainer = () => {
     const { id } = useParams();
-    const [product, setProduct] = useState({});
+    const [product, setProduct] = useState();
+    const db = getFirestore();
 
+    const getProduct = () => {
+        const queryDoc = doc(db, 'products', id);
+        getDoc(queryDoc)
+          .then((doc) => {
+            setProduct({ idBase: doc.id, ...doc.data() });
+          })
+          .catch((err) => console.log(err));
+      };
 
     useEffect(() => {
-        data.products.forEach(prod => {
-            console.log(prod);
-            if(prod.id === parseInt(id))
-                setProduct(prod);
-        });
-        
-        //setProduct(data.products.filter(((prod) => prod.id === parseInt(id))));
+        getProduct();
     }, [id])
 
     return (
         <div>
-            <ItemDetail product={product} />
+             {product && <ItemDetail key={product.title} product={product} />}
         </div>
     )
 }

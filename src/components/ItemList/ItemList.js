@@ -6,8 +6,9 @@ const ItemList = ({products}) => {
   return (
     <div className='item-list'>
       {products.map((product) => 
-      <Link key={product.id} to={`/product/${product.id}`} className='link'>
+      <Link key={product.id} to={`/product/${product.idBase}`} className='link'>
             <Item item={product}/>
+            {console.log(product)}
       </Link>
       )}
       </div>

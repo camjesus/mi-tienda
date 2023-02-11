@@ -1,0 +1,42 @@
+.div-cart {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #AF7AC5;
+    border-style: solid;
+}
+
+.img-cart {
+    margin: 5px;
+}
+
+.detail-cart {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-cart-text {
+    width: 200px;
+    padding-left: 10px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.delete-button {
+    margin: 15px;
+    background-color: #AF7AC5;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 16px rgb(122, 121, 121);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text {
+    font-family: 'Josefin Sans', cursive;
+    font-size: 20px;
+}

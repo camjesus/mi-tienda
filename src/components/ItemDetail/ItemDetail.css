@@ -1,7 +1,7 @@
 .img-detail {
     border-radius: 10px;
     border-width: 2px;
-    border-color: blueviolet;
+    border-color: #AF7AC5;
     border-style: solid;
     box-shadow: 10px 10px 10px rgb(76, 76, 76);
     margin-right: 30px;
@@ -16,4 +16,20 @@
 
 .detail-text {
     margin-top: auto;
+}
+
+.add-button {
+    margin-top: 20px;
+    background-color: #AF7AC5;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Josefin Sans', cursive;
+    font-size: 17px;
+    margin-left: 40px;
+}
+
+.img-prod {
+    margin: 10px;
 }

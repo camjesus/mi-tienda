@@ -4,15 +4,16 @@
     margin-inline: 30px;
     border-radius: 10px;
     border-width: 2px;
-    border-color: blueviolet;
+    border-color: #AF7AC5;
     border-style: solid;
     box-shadow: 10px 10px 10px rgb(76, 76, 76);
   }
   
   .img-item {
     height: 200px;
-    width: 200px;
+    width: 220px;
     margin: 10px;
+    margin-top: 20px;
   }
 
   .item-price {

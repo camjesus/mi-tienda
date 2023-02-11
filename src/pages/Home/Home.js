@@ -1,30 +1,37 @@
 import './Home.css'
 import ItemList from '../../components/ItemList/ItemList.js';
-import CartItem from '../../components/CartItem/CartItem.js';
-import data from '../../products.json' 
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import {
+	getFirestore,
+	getDocs,
+	collection,
+	query,
+	where,
+  } from 'firebase/firestore';
 
 const Home = () => {
 	const {type} = useParams();
-	const [productos, setProducts] = useState([])
-	console.log(type);
-    let number = 0;
+	const [products, setProducts] = useState([]);
+	const db = getFirestore();
+	const queryBase = collection(db, 'products');
+	const querySnapshot = type ? query(queryBase, where('category', '==', type)) : queryBase;
 
-	useEffect(()=>{
-		setProducts(data.products)
-		if(type !== undefined)
-		{
-			console.log('pasa por undi')
-			setProducts(data.products.filter(prod => prod.category === type))
-		}else{
-			setProducts(data.products)
-		}
-	}, [type])
+	const getProducts = () => {
+		getDocs(querySnapshot).then((response) => {
+		  const data = response.docs.map((product) => {
+			console.log(product.data());
+			return { idBase: product.id, ...product.data() };
+		  });
+		  setProducts(data);
+		});
+	  };
+	  useEffect(() => {
+		getProducts();
+	  }, [type]);
   return (
     <div>
-    	<ItemList products={productos} />
-		<CartItem total={number}/>
+    	<ItemList products={products} />
     </div>
   )
 }

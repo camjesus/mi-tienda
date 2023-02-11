@@ -1,9 +1,11 @@
 import './App.css';
-import {Route, BrowserRouter, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer'
 import NavBar  from './components/NavBar/NavBar';
 import Error from './pages/Error/Error'
+import CartListContainer from './pages/CartListContainer/CartListContainer.js';
+import CartWidget from './components/CartWidget/CartWidget';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
           <Route  path='/' element={<Home />}/>
           <Route  path='/category/:type' element={<Home />}/>
           <Route  path='/product/:id' element={<ItemDetailContainer />}/>
+          <Route  path='/cart' element={<CartListContainer />}/>
         </Routes>
+        <CartWidget/>
     </div>
   );
 }

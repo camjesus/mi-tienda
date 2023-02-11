@@ -1,0 +1,68 @@
+.form-card {
+    margin-left: 30px;
+    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+    padding: 30px;
+}
+
+.cart {
+    flex-direction: row;
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+}
+
+.cart-list {
+    margin-left: 30px;
+    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    align-content: flex-start;
+}
+
+.total {
+    display: flex;
+    justify-content: left;
+    align-content: flex-end;
+}
+
+.create-button {
+    margin-top: 20px;
+    background-color: #AF7AC5;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Josefin Sans', cursive;
+    font-size: 17px;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Josefin Sans', cursive;
+}
+
+.title {
+    font-family: 'Josefin Sans', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.total-text {
+    margin-top: 40px;
+    font-family: 'Josefin Sans', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.message {
+    text-align: center;
+    font-family: 'Josefin Sans', cursive;
+    font-size: 30px;
+    margin-top: 15%;
+}
